@@ -1,0 +1,106 @@
+{
+	"info": {
+		"_postman_id": "3cc2e6ad-0f2d-49e3-807a-1a0efce99732",
+		"name": "Reservation-system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "655304"
+	},
+	"item": [
+		{
+			"name": "schedule",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"850c3e58-dbc0-46a5-8ed4-b4d11ecb9884\",\n    \"schedule\": \"2024-01-02 20:30:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8008/appointments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel appointment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\": \"850c3e58-dbc0-46a5-8ed4-b4d11ecb9884\",\n    \"schedule\": \"2024-01-02 20:30:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8008/appointments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appointments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8008/appointments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8008",
+					"path": [
+						"appointments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
